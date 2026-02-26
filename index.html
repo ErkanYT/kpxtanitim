@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kuponix - Yapay Zeka Destekli Bahis Kuponları</title>
+    <title data-i18n="title">Kuponix - Yapay Zeka Destekli Bahis Kuponları</title>
     <meta name="description"
         content="Yapay zekanın gücüyle günlük bahis kuponları alın, toplulukla etkileşime geçin ve kazancınızı artırın. Modern, güvenli ve kullanıcı dostu mobil uygulama.">
     <meta name="keywords" content="bahis, kupon, yapay zeka, AI, mobil uygulama, spor bahisleri">
@@ -25,9 +25,20 @@
                 <span class="brand-name">Kuponix</span>
             </div>
             <nav class="nav-menu">
-                <a href="#features" onclick="scrollToSection('features')">Özellikler</a>
-                <a href="#testimonials" onclick="scrollToSection('testimonials')">Yorumlar</a>
-                <a href="#download" onclick="scrollToSection('download')">İndir</a>
+                <a href="#features" onclick="scrollToSection('features')" data-i18n="nav_features">Özellikler</a>
+                <a href="#testimonials" onclick="scrollToSection('testimonials')"
+                    data-i18n="nav_testimonials">Yorumlar</a>
+                <a href="#download" onclick="scrollToSection('download')" data-i18n="nav_download">İndir</a>
+
+                <!-- Language Switcher -->
+                <div class="lang-switch"
+                    style="display: flex; gap: 10px; margin-left: 20px; align-items: center; cursor: pointer;">
+                    <span id="lang-tr" onclick="setLanguage('tr')"
+                        style="font-weight: bold; opacity: 1; transition: opacity 0.3s; color: white;">TR</span>
+                    <span style="color: rgba(255,255,255,0.3);">|</span>
+                    <span id="lang-en" onclick="setLanguage('en')"
+                        style="font-weight: bold; opacity: 0.5; transition: opacity 0.3s; color: white;">EN</span>
+                </div>
             </nav>
             <div class="mobile-menu-btn">
                 <i class="fas fa-bars"></i>
@@ -40,25 +51,25 @@
         <div class="hero-background"></div>
         <div class="container">
             <div class="hero-content">
-                <div class="badge">
+                <div class="badge" data-i18n="hero_badge">
                     🚀 Yapay Zeka Destekli Bahis Kuponları
                 </div>
                 <h1 class="hero-title glow-text">Kuponix</h1>
                 <p class="hero-description">
-                    Yapay zekanın gücüyle günlük bahis kuponları alın, toplulukla etkileşime geçin ve kazancınızı
-                    artırın.
-                    <span class="highlight">Gelecek burada!</span>
+                    <span data-i18n="hero_description">Yapay zekanın gücüyle günlük bahis kuponları alın, toplulukla
+                        etkileşime geçin ve kazancınızı artırın.</span>
+                    <span class="highlight" data-i18n="hero_description_highlight">Gelecek burada!</span>
                 </p>
                 <div class="hero-buttons">
                     <a href="https://www.dropbox.com/scl/fi/kiqt34fua4oktbheneocc/kuponix.apk?rlkey=ttia0po28h1aqu3e2069n3sab&st=5xko9792&dl=1"
                         download class="btn btn-primary btn-pulse">
                         <i class="fas fa-download"></i>
-                        Hemen İndir
+                        <span data-i18n="btn_download">Hemen İndir</span>
                     </a>
                     <a href="https://www.virustotal.com/gui/file/24ae2e9ccb966da924c6b1d985988dd6081d4596caf56db9024571f9f1176ad0"
                         target="_blank" class="btn btn-secondary btn-pulse">
                         <i class="fas fa-shield-alt"></i>
-                        VirusTotal Sonucu
+                        <span data-i18n="btn_virustotal">VirusTotal Sonucu</span>
                     </a>
                 </div>
 
@@ -66,19 +77,19 @@
                 <div class="stats">
                     <div class="stat-item">
                         <div class="stat-number">1K+</div>
-                        <div class="stat-label">Aktif Kullanıcı</div>
+                        <div class="stat-label" data-i18n="stat_users_label">Aktif Kullanıcı</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number">95%</div>
-                        <div class="stat-label">Başarı Oranı</div>
+                        <div class="stat-label" data-i18n="stat_success_label">Başarı Oranı</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number">3+</div>
-                        <div class="stat-label">Günlük Kupon</div>
+                        <div class="stat-label" data-i18n="stat_daily_label">Günlük Kupon</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number">24/7</div>
-                        <div class="stat-label">Destek</div>
+                        <div class="stat-label" data-i18n="stat_support_label">Destek</div>
                     </div>
                 </div>
             </div>
@@ -89,8 +100,9 @@
     <section id="features" class="features">
         <div class="container">
             <div class="section-header">
-                <h2>Neden <span class="highlight">Kuponix</span>?</h2>
-                <p>Modern teknoloji ile bahis deneyiminizi bir üst seviyeye taşıyacak özellikler</p>
+                <h2 data-i18n="features_title">Neden <span class="highlight">Kuponix</span>?</h2>
+                <p data-i18n="features_subtitle">Modern teknoloji ile bahis deneyiminizi bir üst seviyeye taşıyacak
+                    özellikler</p>
             </div>
 
             <div class="features-grid">
@@ -98,48 +110,49 @@
                     <div class="feature-icon">
                         <i class="fas fa-brain"></i>
                     </div>
-                    <h3>Yapay Zeka Gücü</h3>
-                    <p>Her gün AI tarafından analiz edilen ve oluşturulan profesyonel bahis kuponları</p>
+                    <h3 data-i18n="feature1_title">Yapay Zeka Gücü</h3>
+                    <p data-i18n="feature1_desc">Her gün AI tarafından analiz edilen ve oluşturulan profesyonel bahis
+                        kuponları</p>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-users"></i>
                     </div>
-                    <h3>Topluluk Oylaması</h3>
-                    <p>Kuponları oylayın, diğer kullanıcıların görüşlerini öğrenin</p>
+                    <h3 data-i18n="feature2_title">Topluluk Oylaması</h3>
+                    <p data-i18n="feature2_desc">Kuponları oylayın, diğer kullanıcıların görüşlerini öğrenin</p>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-trophy"></i>
                     </div>
-                    <h3>Liderlik Tablosu</h3>
-                    <p>En başarılı kullanıcıları takip edin, rekabette öne geçin</p>
+                    <h3 data-i18n="feature3_title">Liderlik Tablosu</h3>
+                    <p data-i18n="feature3_desc">En başarılı kullanıcıları takip edin, rekabette öne geçin</p>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-heart"></i>
                     </div>
-                    <h3>Favorilerim</h3>
-                    <p>Beğendiğiniz kuponları favorilere ekleyin, kolayca erişin</p>
+                    <h3 data-i18n="feature4_title">Favorilerim</h3>
+                    <p data-i18n="feature4_desc">Beğendiğiniz kuponları favorilere ekleyin, kolayca erişin</p>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-clock"></i>
                     </div>
-                    <h3>Geçmiş Analizi</h3>
-                    <p>Tüm geçmiş kuponları görüntüleyin, başarı oranlarını analiz edin</p>
+                    <h3 data-i18n="feature5_title">Geçmiş Analizi</h3>
+                    <p data-i18n="feature5_desc">Tüm geçmiş kuponları görüntüleyin, başarı oranlarını analiz edin</p>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-bolt"></i>
                     </div>
-                    <h3>Gerçek Zamanlı</h3>
-                    <p>Anlık veri güncellemeleri ve canlı sonuçlar</p>
+                    <h3 data-i18n="feature6_title">Gerçek Zamanlı</h3>
+                    <p data-i18n="feature6_desc">Anlık veri güncellemeleri ve canlı sonuçlar</p>
                 </div>
             </div>
         </div>
@@ -151,8 +164,8 @@
     <section id="testimonials" class="testimonials">
         <div class="container">
             <div class="section-header">
-                <h2>Kullanıcı <span class="highlight">Yorumları</span></h2>
-                <p>Binlerce memnun kullanıcımızın deneyimlerini keşfedin</p>
+                <h2 data-i18n="testimonials_title">Kullanıcı <span class="highlight">Yorumları</span></h2>
+                <p data-i18n="testimonials_subtitle">Binlerce memnun kullanıcımızın deneyimlerini keşfedin</p>
             </div>
 
             <div class="testimonials-grid">
@@ -164,7 +177,8 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p>"Kuponix sayesinde bahis stratejim tamamen değişti. AI'ın önerileri gerçekten çok başarılı!"</p>
+                    <p data-i18n="test1_text">"Kuponix sayesinde bahis stratejim tamamen değişti. AI'ın önerileri
+                        gerçekten çok başarılı!"</p>
                     <div class="testimonial-author">- Mehmet K.</div>
                 </div>
 
@@ -176,7 +190,8 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p>"Uygulamanın arayüzü çok şık ve kullanımı kolay. Favoriler özelliği harika!"</p>
+                    <p data-i18n="test2_text">"Uygulamanın arayüzü çok şık ve kullanımı kolay. Favoriler özelliği
+                        harika!"</p>
                     <div class="testimonial-author">- Ayşe T.</div>
                 </div>
 
@@ -188,7 +203,8 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p>"Liderlik tablosunda üst sıralardayım. Topluluk oylaması çok faydalı bir özellik."</p>
+                    <p data-i18n="test3_text">"Liderlik tablosunda üst sıralardayım. Topluluk oylaması çok faydalı bir
+                        özellik."</p>
                     <div class="testimonial-author">- Okan D.</div>
                 </div>
             </div>
@@ -199,34 +215,35 @@
     <section id="download" class="download">
         <div class="container">
             <div class="download-content">
-                <h2>Hemen <span class="highlight">Başlayın</span></h2>
-                <p>Kuponix'i indirin ve yapay zeka destekli bahis kuponlarıyla kazanmaya başlayın!</p>
+                <h2 data-i18n="download_title">Hemen <span class="highlight">Başlayın</span></h2>
+                <p data-i18n="download_subtitle">Kuponix'i indirin ve yapay zeka destekli bahis kuponlarıyla kazanmaya
+                    başlayın!</p>
 
                 <div class="download-buttons">
                     <a href="https://www.dropbox.com/scl/fi/kiqt34fua4oktbheneocc/kuponix.apk?rlkey=ttia0po28h1aqu3e2069n3sab&st=5xko9792&dl=1"
                         download class="btn btn-primary btn-large">
                         <i class="fas fa-download"></i>
-                        APK İndir
+                        <span data-i18n="btn_download_apk">APK İndir</span>
                     </a>
                     <a href="https://www.virustotal.com/gui/file/24ae2e9ccb966da924c6b1d985988dd6081d4596caf56db9024571f9f1176ad0"
                         target="_blank" class="btn btn-secondary btn-large">
                         <i class="fas fa-shield-alt"></i>
-                        VirusTotal Sonucu
+                        <span data-i18n="btn_virustotal">VirusTotal Sonucu</span>
                     </a>
                 </div>
 
                 <div class="download-features">
                     <div class="download-feature">
                         <i class="fas fa-shield-alt"></i>
-                        100% Güvenli
+                        <span data-i18n="feature_safe">100% Güvenli</span>
                     </div>
                     <div class="download-feature">
                         <i class="fas fa-chart-line"></i>
-                        Sürekli Güncellenen
+                        <span data-i18n="feature_updated">Sürekli Güncellenen</span>
                     </div>
                     <div class="download-feature">
                         <i class="fas fa-comment"></i>
-                        7/24 Destek
+                        <span data-i18n="feature_support">7/24 Destek</span>
                     </div>
                 </div>
             </div>
@@ -244,45 +261,47 @@
                         </div>
                         <span class="brand-name">Kuponix</span>
                     </div>
-                    <p>Yapay zeka destekli bahis kuponları ile geleceği yakalayın.</p>
+                    <p data-i18n="footer_desc">Yapay zeka destekli bahis kuponları ile geleceği yakalayın.</p>
                 </div>
 
                 <div class="footer-section">
-                    <h3>Özellikler</h3>
+                    <h3 data-i18n="footer_features_title">Özellikler</h3>
                     <ul>
-                        <li>AI Kuponları</li>
-                        <li>Topluluk Oylaması</li>
-                        <li>Liderlik Tablosu</li>
-                        <li>Favoriler</li>
+                        <li data-i18n="footer_f1">AI Kuponları</li>
+                        <li data-i18n="footer_f2">Topluluk Oylaması</li>
+                        <li data-i18n="footer_f3">Liderlik Tablosu</li>
+                        <li data-i18n="footer_f4">Favoriler</li>
                     </ul>
                 </div>
 
                 <div class="footer-section">
-                    <h3>Destek</h3>
+                    <h3 data-i18n="footer_support_title">Destek</h3>
                     <ul>
-                        <li>SSS</li>
-                        <li>İletişim</li>
-                        <li>Kullanım Kılavuzu</li>
-                        <li>Geri Bildirim</li>
+                        <li data-i18n="footer_s1">SSS</li>
+                        <li data-i18n="footer_s2">İletişim</li>
+                        <li data-i18n="footer_s3">Kullanım Kılavuzu</li>
+                        <li data-i18n="footer_s4">Geri Bildirim</li>
                     </ul>
                 </div>
 
                 <div class="footer-section">
-                    <h3>İletişim</h3>
+                    <h3 data-i18n="footer_contact_title">İletişim</h3>
                     <ul>
                         <li>info@kuponix.com</li>
                         <li>+90 XXX XXX XX XX</li>
-                        <li>İstanbul, Türkiye</li>
+                        <li data-i18n="footer_country">İstanbul, Türkiye</li>
                     </ul>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 Kuponix. Tüm hakları saklıdır.</p>
+                <p data-i18n="footer_rights">&copy; 2024 Kuponix. Tüm hakları saklıdır.</p>
             </div>
         </div>
     </footer>
 
+    <!-- Use a separate scripts for translations and logic so it's clean -->
+    <script src="lang.js"></script>
     <script src="script.js"></script>
 </body>
 
