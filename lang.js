@@ -51,7 +51,10 @@ const translations = {
         footer_s4: "Geri Bildirim",
         footer_contact_title: "İletişim",
         footer_country: "İstanbul, Türkiye",
-        footer_rights: "&copy; 2024 Kuponix. Tüm hakları saklıdır."
+        footer_rights: "&copy; 2024 Kuponix. Tüm hakları saklıdır.",
+        footer_privacy: "Gizlilik Politikası",
+        nav_home: "Ana Sayfa",
+        title_privacy: "Gizlilik Politikası - Kuponix"
     },
     en: {
         title: "Kuponix - AI-Powered Betting Tips",
@@ -105,7 +108,10 @@ const translations = {
         footer_s4: "Feedback",
         footer_contact_title: "Contact",
         footer_country: "Istanbul, Turkey",
-        footer_rights: "&copy; 2024 Kuponix. All rights reserved."
+        footer_rights: "&copy; 2024 Kuponix. All rights reserved.",
+        footer_privacy: "Privacy Policy",
+        nav_home: "Home",
+        title_privacy: "Privacy Policy - Kuponix"
     }
 };
 
